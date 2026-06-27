@@ -97,7 +97,7 @@ export function Footer() {
             {/* Social Media */}
             <div className="mt-4 flex gap-3">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/mentoraa.ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition hover:border-indigo-500/50 hover:bg-indigo-500/10 hover:text-indigo-400"
