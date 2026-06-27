@@ -4,7 +4,7 @@ import { GraduationCap, MapPin, Phone, Mail, Instagram, Facebook, Twitter, Linke
 export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-gray-950/50">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand & Description */}
           <div className="space-y-4">
@@ -88,8 +88,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-indigo-400" />
-                <a href="mailto:hello@mentora.in" className="hover:text-white transition">
-                  hello@mentora.in
+                <a href="mailto:Contact.mentoraedu@gmail.com" className="hover:text-white transition">
+                  Contact.mentoraedu@gmail.com
                 </a>
               </li>
             </ul>

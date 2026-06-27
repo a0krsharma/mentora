@@ -14,6 +14,7 @@ create table if not exists public.bookings (
   student_grade integer not null check (student_grade between 2 and 10),
   subject text not null,
   booking_type text not null default 'regular',
+  child_info text,
   status text not null default 'pending' check (status in ('pending', 'confirmed', 'completed', 'cancelled')),
   meeting_link text not null default '',
   notes text,

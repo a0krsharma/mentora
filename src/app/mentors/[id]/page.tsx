@@ -32,7 +32,7 @@ export default async function MentorProfilePage({ params }: Props) {
       : "text-cyan-300 border-cyan-500/30 bg-cyan-500/10";
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-28 sm:px-6">
+    <div className="mx-auto max-w-7xl px-4 py-28 sm:px-6">
       <div className="grid gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <div className="glass rounded-3xl p-8">

@@ -14,6 +14,32 @@ export type Mentor = {
 
 export const mentors: Mentor[] = [
   {
+    id: "anandmani-kumar",
+    name: "Anandmani Kumar",
+    college: "IIT Patna",
+    collegeType: "IIT",
+    branch: "Computer Science",
+    subjects: ["Mathematics", "Science", "Physics", "English", "Computer Basics"],
+    grades: [4, 5, 6, 7, 8, 9, 10],
+    bio: "8+ years of teaching experience with a passion for making complex concepts simple. Expert in CBSE, ICSE, and State boards. Known for his patient approach and ability to identify each student's unique learning style. Has helped 500+ students achieve academic excellence and build strong foundations for competitive exams.",
+    rating: 4.96,
+    sessions: 520,
+    avatar: "https://ui-avatars.com/api/?name=Anandmani+Kumar&background=14b8a6&color=fff&size=256",
+  },
+  {
+    id: "rakhi-singh",
+    name: "Rakhi Singh",
+    college: "IIT Patna",
+    collegeType: "IIT",
+    branch: "Computer Science and Data Science",
+    subjects: ["Mathematics", "Science", "Physics", "English", "Computer Basics", "Hindi", "Chemistry", "Geography", "History"],
+    grades: [4, 5, 6, 7, 8, 9, 10],
+    bio: "6+ years of teaching experience specializing in personalized learning plans. Expert in CBSE, ICSE, and State boards with a deep understanding of child psychology. Her interactive teaching style makes even the toughest subjects enjoyable. Known for building confidence in shy students and helping them discover their true potential. Has successfully mentored 450+ students across all subjects.",
+    rating: 4.95,
+    sessions: 480,
+    avatar: "https://ui-avatars.com/api/?name=Rakhi+Singh&background=f472b6&color=fff&size=256",
+  },
+  {
     id: "arjun-mehta",
     name: "Arjun Mehta",
     college: "IIT Bombay",
@@ -125,6 +151,10 @@ export const subjects = [
   "Physics",
   "English",
   "Computer Basics",
+  "Hindi",
+  "Chemistry",
+  "Geography",
+  "History",
 ] as const;
 
 export const grades = [2, 3, 4, 5, 6, 7, 8, 9, 10] as const;

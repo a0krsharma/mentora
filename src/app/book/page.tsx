@@ -17,7 +17,7 @@ export default async function BookPage({ searchParams }: Props) {
   const bookedSlotKeys = Array.from(await getBookedSlotKeys());
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-28 sm:px-6">
+    <div className="mx-auto max-w-3xl px-4 py-28 sm:px-6">
       <div className="mb-10 text-center">
         <h1 className="text-3xl font-bold sm:text-4xl">Book your class now</h1>
         <p className="mt-3 text-slate-400">

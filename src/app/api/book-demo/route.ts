@@ -19,6 +19,7 @@ export async function POST(request: NextRequest) {
       studentGrade,
       subject,
       bookingType,
+      childInfo,
     } = body;
 
     if (
@@ -53,6 +54,7 @@ export async function POST(request: NextRequest) {
       student_grade: Number(studentGrade),
       subject: String(subject),
       booking_type: String(bookingType),
+      child_info: childInfo ? String(childInfo).trim() : null,
       status: "pending",
       meeting_link: "",
       notes: null,

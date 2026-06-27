@@ -57,6 +57,7 @@ export function BookingForm({
           studentGrade: Number(form.get("studentGrade")),
           subject: form.get("subject"),
           bookingType: form.get("bookingType"),
+          childInfo: form.get("childInfo"),
         }),
       });
 
@@ -153,7 +154,14 @@ export function BookingForm({
               <option value="assignment" className="bg-gray-900">Assignment Help</option>
               <option value="project" className="bg-gray-900">Project Help</option>
               <option value="topic" className="bg-gray-900">Specific Topic Help</option>
+              <option value="coding" className="bg-gray-900">Coding</option>
+              <option value="test-prep" className="bg-gray-900">Test Prep</option>
+              <option value="spoken-english" className="bg-gray-900">Spoken English</option>
             </Select>
+          </div>
+          <div className="sm:col-span-2">
+            <label className="mb-1.5 block text-sm text-slate-400">Tell me about your child</label>
+            <Input name="childInfo" placeholder="What would you like to improve? (e.g., weak in math, needs help with science concepts, etc.)" />
           </div>
         </div>
       </div>

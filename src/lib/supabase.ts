@@ -15,6 +15,7 @@ export type Booking = {
   student_grade: number;
   subject: string;
   booking_type: string;
+  child_info: string | null;
   status: BookingStatus;
   meeting_link: string;
   notes: string | null;
