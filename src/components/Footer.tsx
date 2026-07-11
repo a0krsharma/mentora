@@ -142,7 +142,7 @@ export function Footer() {
             © {new Date().getFullYear()} Mentora. All rights reserved. Learn brighter.
           </p>
           <div className="flex gap-6 text-xs text-slate-500">
-            <Link href="#" className="hover:text-white transition">
+            <Link href="/privacy" className="hover:text-white transition">
               Privacy Policy
             </Link>
             <Link href="#" className="hover:text-white transition">
