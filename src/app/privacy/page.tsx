@@ -13,10 +13,10 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="mb-4 text-2xl font-semibold text-white">1. Introduction</h2>
             <p className="leading-relaxed">
-              Mentora ("we," "our," or "us") is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our 1:1 online mentoring platform (the "Service"). By using our Service, you agree to the collection and use of information in accordance with this policy.
+              Mentora (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our 1:1 online mentoring platform (the &ldquo;Service&rdquo;). By using our Service, you agree to the collection and use of information in accordance with this policy.
             </p>
             <p className="mt-4 leading-relaxed">
-              We are dedicated to maintaining the trust and confidence of our users, particularly parents and guardians who entrust us with their children's educational journey. This policy reflects our commitment to transparency, accountability, and data protection best practices.
+              We are dedicated to maintaining the trust and confidence of our users, particularly parents and guardians who entrust us with their children&apos;s educational journey. This policy reflects our commitment to transparency, accountability, and data protection best practices.
             </p>
           </section>
 
@@ -175,7 +175,7 @@ export default function PrivacyPolicy() {
               <li><strong>Age Verification:</strong> We verify that users registering are parents/guardians, not minors</li>
               <li><strong>Limited Data Collection:</strong> We collect only information necessary for educational purposes</li>
               <li><strong>No Marketing to Minors:</strong> We do not directly market to students under 18</li>
-              <li><strong>Parental Control:</strong> Parents can review, modify, or delete their child's information at any time</li>
+              <li><strong>Parental Control:</strong> Parents can review, modify, or delete their child&apos;s information at any time</li>
               <li><strong>Safe Environment:</strong> All mentors undergo background checks and are trained in child safety</li>
             </ul>
             <p className="mt-4">We do not knowingly collect personal information from children under 13 without parental consent. If you believe we have inadvertently collected such information, please contact us immediately.</p>
@@ -214,7 +214,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-inside list-disc space-y-2 mt-4">
               <li>Posting the new Privacy Policy on this page</li>
-              <li>Updating the "Last updated" date</li>
+              <li>Updating the &ldquo;Last updated&rdquo; date</li>
               <li>Sending an email notification to registered users</li>
               <li>Displaying a prominent notice on our platform</li>
             </ul>
@@ -229,7 +229,7 @@ export default function PrivacyPolicy() {
               <li><strong>Personal Data Protection Bill (India):</strong> Once enacted</li>
               <li><strong>GDPR:</strong> For users in the European Union</li>
               <li><strong>CCPA/CPRA:</strong> For users in California</li>
-              <li><strong>COPPA:</strong> For children's online privacy protection</li>
+              <li><strong>COPPA:</strong> For children&apos;s online privacy protection</li>
             </ul>
           </section>
 

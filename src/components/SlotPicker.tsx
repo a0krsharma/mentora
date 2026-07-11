@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { format, parseISO, isBefore, startOfDay, addDays } from "date-fns";
+import { format, startOfDay, addDays } from "date-fns";
 import { cn } from "@/lib/utils";
 import type { TimeSlot } from "@/lib/slots";
 
