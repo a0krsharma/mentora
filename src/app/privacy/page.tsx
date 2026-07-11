@@ -1,5 +1,3 @@
-import { GraduationCap } from "lucide-react";
-
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gray-950 py-16">
@@ -168,7 +166,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-2xl font-semibold text-white">9. Children's Privacy</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-white">9. Children&apos;s Privacy</h2>
             <p className="mb-4">Our platform is designed for students under the age of 18. We have special protections in place:</p>
             <ul className="list-inside list-disc space-y-2">
               <li><strong>Parental Consent:</strong> We collect personal information only from parents or legal guardians</li>
