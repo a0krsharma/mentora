@@ -39,6 +39,14 @@ export function BookingForm({
     }
 
     const form = new FormData(e.currentTarget);
+    const parentPhone = form.get("parentPhone") as string;
+
+    // Validate phone number: must start with +91 and be followed by exactly 10 digits
+    const phoneRegex = /^\+91\d{10}$/;
+    if (!phoneRegex.test(parentPhone)) {
+      setError("Phone number must be in format: +91 followed by 10 digits (e.g., +919876543210)");
+      return;
+    }
 
     setLoading(true);
 
@@ -117,7 +125,7 @@ export function BookingForm({
           </div>
           <div>
             <label className="mb-1.5 block text-sm text-slate-400">Phone</label>
-            <Input name="parentPhone" required placeholder="+91 98765 43210" type="tel" />
+            <Input name="parentPhone" required placeholder="+919876543210" type="tel" pattern="\+91\d{10}" title="Phone number must be in format: +91 followed by 10 digits" />
           </div>
           <div className="sm:col-span-2">
             <label className="mb-1.5 block text-sm text-slate-400">Email</label>
