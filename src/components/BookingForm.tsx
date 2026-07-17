@@ -39,14 +39,17 @@ export function BookingForm({
     }
 
     const form = new FormData(e.currentTarget);
-    const parentPhone = form.get("parentPhone") as string;
+    const phoneDigits = form.get("parentPhone") as string;
 
-    // Validate phone number: must start with +91 and be followed by exactly 10 digits
-    const phoneRegex = /^\+91\d{10}$/;
-    if (!phoneRegex.test(parentPhone)) {
-      setError("Phone number must be in format: +91 followed by 10 digits (e.g., +919876543210)");
+    // Validate phone number: must be exactly 10 digits
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(phoneDigits)) {
+      setError("Phone number must be exactly 10 digits (e.g., 9876543210)");
       return;
     }
+
+    // Prepend +91 to the phone number
+    const fullPhone = `+91${phoneDigits}`;
 
     setLoading(true);
 
@@ -60,7 +63,7 @@ export function BookingForm({
           slotTime: selectedSlot.time,
           parentName: form.get("parentName"),
           parentEmail: form.get("parentEmail"),
-          parentPhone: form.get("parentPhone"),
+          parentPhone: fullPhone,
           studentName: form.get("studentName"),
           studentGrade: Number(form.get("studentGrade")),
           subject: form.get("subject"),
@@ -125,7 +128,21 @@ export function BookingForm({
           </div>
           <div>
             <label className="mb-1.5 block text-sm text-slate-400">Phone</label>
-            <Input name="parentPhone" required placeholder="+919876543210" type="tel" pattern="\+91\d{10}" title="Phone number must be in format: +91 followed by 10 digits" />
+            <div className="flex">
+              <span className="flex items-center rounded-l-lg border border-r-0 border-white/20 bg-white/10 px-3 text-sm font-medium text-white">
+                +91
+              </span>
+              <Input 
+                name="parentPhone" 
+                required 
+                placeholder="98765 43210" 
+                type="tel" 
+                pattern="\d{10}" 
+                title="Enter 10 digits" 
+                maxLength={10}
+                className="rounded-l-none"
+              />
+            </div>
           </div>
           <div className="sm:col-span-2">
             <label className="mb-1.5 block text-sm text-slate-400">Email</label>
