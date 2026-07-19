@@ -84,7 +84,7 @@ export default function CareerPage() {
             </div>
             <h1 className="mb-4 text-4xl font-bold text-white">Application Submitted!</h1>
             <p className="mb-8 text-xl text-slate-300">
-              Thank you for your interest in joining Mentora. We'll review your application and get back to you soon.
+              Thank you for your interest in joining Mentora. We&apos;ll review your application and get back to you soon.
             </p>
             <Button onClick={() => setSubmitted(false)} size="lg">
               Submit Another Application
@@ -102,7 +102,7 @@ export default function CareerPage() {
         <div className="mb-12 text-center">
           <h1 className="mb-4 text-5xl font-bold text-white">Join Our Team</h1>
           <p className="text-xl text-slate-300">
-            Build the future of education with India's brightest minds
+            Build the future of education with India&apos;s brightest minds
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function CareerPage() {
                             {job.type}
                           </span>
                         </div>
-                        <p className="mb-3 text-slate-300">{job.description}</p>
+                        <p className="mb-3 text-slate-300">{job.description.replace(/'/g, "&apos;")}</p>
                         <div className="flex items-center gap-4 text-sm text-slate-400">
                           <span>📍 {job.location}</span>
                         </div>
@@ -188,7 +188,7 @@ export default function CareerPage() {
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-indigo-400">✓</span>
-                  Work with India's top educators
+                  Work with India&apos;s top educators
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-indigo-400">✓</span>
