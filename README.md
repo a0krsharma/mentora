@@ -62,16 +62,6 @@ Open [http://localhost:3000](http://localhost:3000)
 
 Your site will be live at `https://your-project.vercel.app`
 
-### 4. Custom domain (mentoraonline.guru)
-
-See **[DEPLOYMENT-DNS.md](./DEPLOYMENT-DNS.md)** for GoDaddy DNS setup.
-
-Quick verify:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/verify-dns.ps1
-```
-
 ## Admin
 
 - URL: `/admin`
