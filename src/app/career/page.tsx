@@ -63,11 +63,26 @@ export default function CareerPage() {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch("/api/career", {
+        method: "POST",
+        body: formData,
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Failed to submit application. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting application:", error);
+      alert("Failed to submit application. Please try again.");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    }
   }
 
   if (submitted) {
